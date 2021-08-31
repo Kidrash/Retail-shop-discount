@@ -29,7 +29,7 @@ int main()
     }
     //  *****from here the code does not see to work with 3% and 0%***** //
 
-     if(3000 <= purchaseAmount <= 4999)
+     else if(3000 <= purchaseAmount <= 4999)
      {
          discountAmount = (3  * purchaseAmount) / 100;
          discountedPrice = (purchaseAmount - discountAmount);
@@ -37,7 +37,7 @@ int main()
           printf("Your Total is %d\n", discountedPrice);
           return(0);
      }
-     else if(purchaseAmount < 3000)
+     else (purchaseAmount < 3000)
           printf("Your discount is 0");
           printf("Your Total is %d\n", purchaseAmount);
      return(0);
